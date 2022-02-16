@@ -1,22 +1,20 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesome Books
+# To Do List
 
-> This is a project that compiles Awesome books
+> This is a project that let's you see a list of task, youy can add them through the console.
 
-![screenshot](./screenshot.png)
-
-In this webpage, you can store any book's name and author into the local storage.
 
 ## Built With
 
 - HTML
 - CSS
 - JavaScript
+- - Webpack
 
 ## Live Page
 
-[Page Link](https://kakalanp.github.io/Awesome-books-with-ES6/)
+[Page Link](https://kakalanp.github.io/TO-DO-list/)
 
 
 ## Getting Started
@@ -35,7 +33,7 @@ To get a local copy up and running follow these simple steps.
 
 - Use this command to get a copy:
 ```
-git clone https://github.com/Kakalanp/Awesome-books-with-ES6.git
+git clone https://github.com/Kakalanp/TO-DO-list.git
 ```
 ### Usage
 
@@ -64,7 +62,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Thanks to Microverse for the guidelines.
-- Thanks to Kenny Salazar for making the base of this project with me.
 
 
 ## 📝 License
