@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import './style.css';
 
 const list = [];
@@ -33,5 +34,3 @@ function createList() {
 document.addEventListener('DOMContentLoaded', () => {
   createList();
 });
-
-console.log(walkDog, sweepFloor, washDish);
