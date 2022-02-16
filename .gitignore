@@ -1,4 +1,9 @@
+.stylelintrc.json
+.hintrc
+.eslintrc.json
+
 # Logs
+
 logs
 *.log
 npm-debug.log*
