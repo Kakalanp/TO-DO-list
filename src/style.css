@@ -5,6 +5,11 @@ body {
   font-size: 1rem;
 }
 
+a {
+  min-width: 40px;
+  min-height: 40px;
+}
+
 h1 {
   font-size: 1.3em;
 }
@@ -45,4 +50,44 @@ input::placeholder {
 
 li p {
   overflow: auto;
+}
+
+.manageTask {
+  position: sticky;
+  left: 100%;
+  min-width: 80px;
+  min-height: 40px;
+  display: flex;
+}
+
+.vertical-button {
+  margin-left: auto;
+  min-width: 40px;
+  min-height: 40px;
+  background-image: url('./assets/dots.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
+}
+
+.edit-button {
+  width: 40px;
+  min-height: 40px;
+  background-image: url('./assets/edit.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+
+.delete-button {
+  width: 40px;
+  min-height: 40px;
+  background-image: url('./assets/trash.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35px;
+}
+
+.off {
+  display: none !important;
 }
