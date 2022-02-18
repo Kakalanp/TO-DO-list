@@ -1,8 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: arial, sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.3em;
+}
+
 ul {
   list-style: none;
+  padding: 0;
+}
+
+#addText {
+  box-sizing: border-box;
+  width: 100%;
+  border: 0;
+  outline: none;
 }
 
 .listWrapper {
-  text-align: center;
-  box-shadow: 15px 14px 13px -7px rgba(0, 0, 0, 0.28);
+  text-align: left;
+  box-shadow: 0 0 13px 1px rgba(0, 0, 0, 0.28);
+  max-width: 100%;
+  min-width: 330px;
+  padding: 10px;
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid grey;
+}
+
+.task-done {
+  text-decoration: line-through !important;
+}
+
+li p {
+  overflow: auto;
 }

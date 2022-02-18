@@ -3,9 +3,23 @@ import './style.css';
 import Task from './modules/addTask.js';
 import createList from './modules/printTasks.js';
 
-const walkDog = new Task('Walk the dog');
-const sweepFloor = new Task('Sweep the floor');
-const washDish = new Task('Wash the dishes');
+const addTask = document.getElementById('addText');
+
+function add() {
+  if (addTask.value !== '') {
+    const newTask = new Task(addTask.value);
+    createList();
+    addTask.value = '';
+  }
+}
+
+addTask.addEventListener('click', () => {
+  add();
+});
+
+addTask.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') add();
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   createList();
