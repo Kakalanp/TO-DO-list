@@ -32,10 +32,11 @@ function clear() {
       if (el.classList.contains('task-done')) deleteList.push(i);
     });
 
+    console.log(deleteList);
     deleteTask(deleteList);
+    console.log(deleteList);
     deleteList = [];
-    createList();
-    deleteSingleTask();
+    document.location.reload();
   });
 }
 

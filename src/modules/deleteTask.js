@@ -1,12 +1,14 @@
 import { getLocalStorage as get, setLocalStorage as set } from './setGet.js';
 
 export default function deleteTask(arr) {
-  const todo = get;
-  let i = 0;
+  let todo = get;
+  let delI = 0;
+  let arrI = todo.length;
   arr.forEach((el) => {
-    const deleteIndex = parseInt(el, 10) - i;
-    todo.splice(deleteIndex, 1);
-    i += 1;
+    const deleteIndex = todo[el - delI].index;
+    todo = todo.filter((todo) => todo.index !== deleteIndex);
+    if (arrI !== todo.length) delI += 1;
+    arrI = todo.length;
   });
   set(todo);
 }
