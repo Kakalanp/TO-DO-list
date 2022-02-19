@@ -38,12 +38,12 @@ export default function createList() {
           el.desc = currentParagraph.innerText;
           set(todo);
         });
+      });
 
-        document.getElementById(`box-${el.index}`).addEventListener('change', () => {
-          document.getElementById(`task-${el.index}`).classList.toggle('task-done');
-          todo[i].completed = !el.completed;
-          set(todo);
-        });
+      document.getElementById(`box-${el.index}`).addEventListener('change', () => {
+        document.getElementById(`task-${el.index}`).classList.toggle('task-done');
+        todo[i].completed = !el.completed;
+        set(todo);
       });
     });
     editTasks();
