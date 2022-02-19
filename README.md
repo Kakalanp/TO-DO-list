@@ -23,6 +23,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
+- npm (node package manager)
 - Have git correctly installed.
 
 ### Setup
@@ -35,6 +36,8 @@ To get a local copy up and running follow these simple steps.
 ```
 git clone https://github.com/Kakalanp/TO-DO-list.git
 ```
+
+- then, run `npm install` followed by the dependencies listed on the package.json file
 ### Usage
 
 - Edit the content as you like.
