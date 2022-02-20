@@ -20,12 +20,33 @@ function deleteSingleTask() {
   });
 }
 
+function clear() {
+  const clear = document.getElementById('clear-button');
+  clear.addEventListener('click', () => {
+    const checkboxes = document.getElementsByClassName('task');
+    const checkboxesArr = Array.from(checkboxes);
+
+    let deleteList = [];
+
+    checkboxesArr.forEach((el, i) => {
+      if (el.classList.contains('task-done')) deleteList.push(i);
+    });
+
+    console.log(deleteList);
+    deleteTask(deleteList);
+    console.log(deleteList);
+    deleteList = [];
+    document.location.reload();
+  });
+}
+
 function add() {
   if (addTask.value !== '') {
     const newTask = new Task(addTask.value);
     createList();
     addTask.value = '';
     deleteSingleTask();
+    clear();
   }
 }
 
@@ -40,4 +61,5 @@ addTask.addEventListener('keypress', (e) => {
 document.addEventListener('DOMContentLoaded', () => {
   createList();
   deleteSingleTask();
+  clear();
 });

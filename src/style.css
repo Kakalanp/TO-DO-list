@@ -91,3 +91,15 @@ li p {
 .off {
   display: none !important;
 }
+
+#clear-button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
