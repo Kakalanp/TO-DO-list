@@ -1,10 +1,10 @@
-/* eslint-disable no-unused-vars */
 import './style.css';
 import Task from './modules/addTask.js';
 import createList from './modules/printTasks.js';
 import deleteTask from './modules/deleteTask.js';
 
 const addTask = document.getElementById('addText');
+const clearBtn = document.getElementById('clear-button');
 
 function deleteSingleTask() {
   const deleteBtns = document.getElementsByClassName('delete-button');
@@ -21,32 +21,31 @@ function deleteSingleTask() {
 }
 
 function clear() {
-  const clear = document.getElementById('clear-button');
-  clear.addEventListener('click', () => {
-    const checkboxes = document.getElementsByClassName('task');
-    const checkboxesArr = Array.from(checkboxes);
+  const checkboxes = document.getElementsByClassName('task');
+  const checkboxesArr = Array.from(checkboxes);
 
-    let deleteList = [];
+  let deleteList = [];
 
-    checkboxesArr.forEach((el, i) => {
-      if (el.classList.contains('task-done')) deleteList.push(i);
-    });
-
-    console.log(deleteList);
-    deleteTask(deleteList);
-    console.log(deleteList);
-    deleteList = [];
-    document.location.reload();
+  checkboxesArr.forEach((el, i) => {
+    if (el.classList.contains('task-done')) deleteList.push(i);
   });
+
+  deleteTask(deleteList);
+  deleteList = [];
+
+  createList();
+  deleteSingleTask();
 }
+
+clearBtn.addEventListener('click', () => { clear(); });
 
 function add() {
   if (addTask.value !== '') {
+    // eslint-disable-next-line no-unused-vars
     const newTask = new Task(addTask.value);
     createList();
     addTask.value = '';
     deleteSingleTask();
-    clear();
   }
 }
 
@@ -61,5 +60,4 @@ addTask.addEventListener('keypress', (e) => {
 document.addEventListener('DOMContentLoaded', () => {
   createList();
   deleteSingleTask();
-  clear();
 });
