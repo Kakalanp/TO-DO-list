@@ -10,7 +10,7 @@
 - HTML
 - CSS
 - JavaScript
-- - Webpack
+- Webpack
 
 ## Live Page
 
