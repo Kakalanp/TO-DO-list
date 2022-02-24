@@ -42,6 +42,9 @@ git clone https://github.com/Kakalanp/TO-DO-list.git
 
 - Edit the content as you like.
 
+### Test
+
+- To test the functions used in this code, run : `npm test`.
 
 ## Authors
 
