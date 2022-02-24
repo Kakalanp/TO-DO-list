@@ -14,7 +14,7 @@
 
 ## Live Page
 
-[Page Link](https://kakalanp.github.io/TO-DO-list/)
+[Page Link](https://kakalanp.github.io/TO-DO-list/dist/)
 
 
 ## Getting Started
@@ -42,6 +42,9 @@ git clone https://github.com/Kakalanp/TO-DO-list.git
 
 - Edit the content as you like.
 
+### Test
+
+- To test the functions used in this code, run : `npm test`.
 
 ## Authors
 
