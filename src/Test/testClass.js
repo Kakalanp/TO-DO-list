@@ -26,6 +26,11 @@ class Task {
     });
     return (todo);
   }
+
+  complete(id, todo) {
+    todo[id].completed = !todo[id].completed;
+    return (todo);
+  }
 }
 
 module.exports = Task;
