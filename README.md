@@ -14,7 +14,7 @@
 
 ## Live Page
 
-[Page Link](https://kakalanp.github.io/TO-DO-list/)
+[Page Link](https://kakalanp.github.io/TO-DO-list/dist/)
 
 
 ## Getting Started
