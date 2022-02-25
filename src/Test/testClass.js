@@ -31,6 +31,25 @@ class Task {
     todo[id].completed = !todo[id].completed;
     return (todo);
   }
+
+  edit(id, desc, todo) {
+    todo[id].desc = desc
+    return todo
+  }
+
+  clear(todo) {
+    let clearTask = []
+    for (let i = 0; i < todo.length; i++) {
+      if (todo[i].completed == true) clearTask.push(i)
+    }
+    // This is the mocking of delete task
+    let i = 0
+    clearTask.forEach((el) => {
+      todo.splice(el - i, 1);
+      i += 1;
+    });
+    return todo
+  }
 }
 
 module.exports = Task;
